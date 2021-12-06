@@ -1,0 +1,8 @@
+Begin
+  N là số được sinh số ngẫu nhiên trong khoảng 0-9
+  Nhập vào M
+  IF (N==M)
+    Display "Đúng"         
+  ELSE             
+    Display "Sai" 
+End
