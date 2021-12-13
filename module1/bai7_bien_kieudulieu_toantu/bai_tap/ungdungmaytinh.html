@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<form>
+    <input type="number" id="input1">
+    <input type="number" id="input2">
+    <br>
+    <br>
+    <button type="button" id="addition" onclick="add()">Addition(+)</button>
+    <button type="button" id="subtraction" onclick="sub()">Subtraction(-)</button>
+    <button type="button" id="multiplication" onclick="mul()">Multiplication(X)</button>
+    <button type="button" id="division" onclick="divi()">Division(/)</button>
+</form>
+<p id="result">Result:</p>
+</body>
+<script>
+    function add() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let sum;
+        sum = a + b;
+        document.getElementById("result").innerHTML= "Result Addition: " + sum;
+    }
+    function sub() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let sub;
+        sub = a - b;
+        document.getElementById("result").innerHTML= "Result Subtraction: " + sub;
+    }
+    function mul() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let multi;
+        multi = a * b;
+        document.getElementById("result").innerHTML= "Result Multiplication: " + multi;
+    }
+    function divi() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let divi;
+        divi = a / b;
+        document.getElementById("result").innerHTML= "Result Division: " + divi;
+    }
+</script>
+</body>
+</html>
