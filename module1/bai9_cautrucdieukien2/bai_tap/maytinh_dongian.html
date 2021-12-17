@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <style>
+        table{
+            padding: 10px;
+            border-spacing: 10px;
+        }
+        th{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th colspan="4">
+            <input type="text" id="inputNumber" style="height: 20px; color: blue">
+        </th>
+    </tr>
+    <tr>
+        <th onclick="num1()">1</th>
+        <th onclick="num2()">2</th>
+        <th onclick="num3()">3</th>
+        <th onclick="sum()">+</th>
+    </tr>
+    <tr>
+        <th onclick="num4()">4</th>
+        <th onclick="num5()">5</th>
+        <th onclick="num6()">6</th>
+        <th onclick="sub()">-</th>
+    </tr>
+    <tr>
+        <th onclick="num7()">7</th>
+        <th onclick="num8()">8</th>
+        <th onclick="num9()">9</th>
+        <th onclick="mul()">X</th>
+    </tr>
+    <tr>
+        <th onclick="xoa()">C</th>
+        <th onclick="num0()">0</th>
+        <th onclick="equal()">=</th>
+        <th onclick="divi()">/</th>
+    </tr>
+</table>
+<script>
+    function num1() {
+        inputNumber.value += 1;
+    }
+    function num2() {
+        inputNumber.value += 2;
+    }
+    function num3() {
+        inputNumber.value += 3;
+    }
+    function num4() {
+        inputNumber.value += 4;
+    }
+    function num5() {
+        inputNumber.value += 5;
+    }
+    function num6() {
+        inputNumber.value += 6;
+    }
+    function num7() {
+        inputNumber.value += 7;
+    }
+    function num8() {
+        inputNumber.value += 8;
+    }
+    function num9() {
+        inputNumber.value += 9;
+    }
+    function num0() {
+        inputNumber.value += 0;
+    }function xoa() {
+        document.getElementById("inputNumber").value=null;
+    }
+    function equal() {
+        alert(eval(document.getElementById("inputNumber").value));
+    }
+    function sum() {
+        inputNumber.value += "+";
+    }
+    function sub() {
+        inputNumber.value += "-";
+    }
+    function mul() {
+        inputNumber.value += "*";
+    }
+    function divi() {
+        inputNumber.value += "/";
+    }
+
+</script>
+</body>
+</html>
