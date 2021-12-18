@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let sophut = parseInt(prompt("Số phút đã sử dụng:"));
+    let phi;
+    if (sophut > 10) {
+        phi = sophut * 500;
+        document.write("Bạn đã gọi: " + sophut + "phút và cước phải đóng là " + phi);
+    } else if (sophut > 5) {
+        phi = sophut * 700;
+        document.write("Bạn đã gọi: " + sophut + "phút và cước phải đóng là " + phi);
+    } else {
+            phi = sophut * 1000;
+            document.write("Bạn đã gọi: " + sophut + "phút và cước phải đóng là " + phi);
+    }
+</script>
+</body>
+</html>

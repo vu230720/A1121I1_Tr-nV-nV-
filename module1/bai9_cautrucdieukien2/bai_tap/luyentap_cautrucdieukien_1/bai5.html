@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    // điểm ktra hs 1; điểm giữa kỳ hs 2; điểm cuối kỳ hs 3l
+    let a = parseInt(prompt("Nhập vào điểm kiểm tra:"));
+    let b = parseInt(prompt("Nhập vào điểm thi giữa kỳ:"));
+    let c = parseInt(prompt("Nhập vào điểm thi cuối kỳ:"));
+    let diemtrungbinh = (a + b*2 + c*3)/6;
+    if (diemtrungbinh > 8){
+        alert("Bạn là học sinh giỏi");
+    }else if (diemtrungbinh > 6.5) {
+        alert("Bạn là học sinh khá");
+    }else if (diemtrungbinh >5){
+        alert("Bạn là học sinh trung bình");
+    }else {
+        alert("Bạn học yếu");
+    }
+</script>
+</body>
+</html>

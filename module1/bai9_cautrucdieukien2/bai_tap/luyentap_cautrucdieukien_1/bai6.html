@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    /*Doanh số đạt > 10tr hh 10%
+    *Doanh số > 8tr hh 8%
+    *Doanh số < 8tr hh 5%
+     */
+    let doanhso = parseInt(prompt("Nhập vào doanh số tháng này:"));
+    let hoahong;
+    if (doanhso > 10000000) {
+        hoahong = doanhso* 0.1;
+        document.write("hoa hồng đạt được là: " + hoahong);
+    }else if (doanhso > 8000000) {
+        hoahong = doanhso* 0.08;
+        document.write("hoa hoa đạt được là: " + hoahong);
+    }else {
+        hoahong = doanhso * 0.05;
+        document.write("hoa hoa đạt được là: " + hoahong);
+    }
+</script>
+</body>
+</html>
