@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10</title>
+</head>
+<body>
+<script>
+    // Cho kWh từ 0 - 50 giá bán điện (đồng/kWh) 1000 VNĐ
+    // Cho kWh từ  51 - 100 giá bán điện (đồng/kWh) 1500 VNĐ
+    // Cho kWh từ  200 trở lên giá bán điện (đồng/kWh) 2000 VNĐ
+    let a = parseInt(prompt("Nhập vào số chữ điện đã dùng"));
+    let tiendien;
+    if (a > 200){
+        tiendien = a * 2000;
+        document.write("Số chữ điện đã dùng là: " + a + "<br>" + "Số tiền phải trả là: " + tiendien);
+    }else if (a > 100){
+        tiendien = a * 1500;
+        document.write("Số chữ điện đã dùng là: " + a + "<br>" + "Số tiền phải trả là: " + tiendien);
+    }else {
+        tiendien = a * 1000;
+        document.write("Số chữ điện đã dùng là: " + a + "<br>" + "Số tiền phải trả là: " + tiendien);
+    }
+</script>
+</body>
+</html>

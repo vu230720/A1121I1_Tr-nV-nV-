@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h1>Thay đổi nội dung của thẻ HTML</h1>
+<div style="background-color: blue; padding: 20px;width: 30%; color: white" id="change">Thời tiết hôm nay thế nào?</div>
+<br>
+<button type="button" onclick="sun()">Trời nắng</button>
+<button type="button" onclick="rain()">Trời mưa</button>
+</body>
+<script>
+    function sun() {
+        document.getElementById("change").innerHTML= "Hôm nay trời nắng đẹp !!!";
+    }
+    function rain() {
+        document.getElementById("change").innerHTML= "Hôm nay trời mưa ngâu :(((";
+    }
+</script>
+</html>

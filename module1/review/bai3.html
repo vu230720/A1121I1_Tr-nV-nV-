@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Thêm thẻ HTML</h1>
+<input type="text" id="add">
+<button type="button" onclick="add()">Add</button>
+<p id="result"></p>
+<script>
+    function add() {
+       let a = document.getElementById("add").value;
+        if (a == ""){
+            alert("Bạn chưa nhập nội dung !!!");
+        }else {
+            document.getElementById("result").innerHTML= a;
+        }
+    }
+</script>
+</body>
+</html>

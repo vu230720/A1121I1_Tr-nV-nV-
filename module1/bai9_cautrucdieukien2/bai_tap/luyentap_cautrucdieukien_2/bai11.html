@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11</title>
+</head>
+<body>
+<script>
+    // < 10tr 0% thuế
+    // > 10tr 5% thuế
+    // > 15tr 10% thuế
+    let tienluong = parseInt(prompt("Nhập vào tiền lương tháng này:"));
+    let tienthue;
+    if (tienluong > 15000000){
+        tienthue = tienluong * 0.1;
+        document.write("Tiền lương tháng này là: " + tienluong + "<br>" + "Tiền thuế phải đóng là: " + tienthue);
+    }else if (tienluong > 10000000){
+        tienthue = tienluong * 0.05;
+        document.write("Tiền lương tháng này là: " + tienluong + "<br>" + "Tiền thuế phải đóng là: " + tienthue);
+    }else {
+        alert("Lương bạn quá thấp miễn nộp thuế");
+    }
+
+</script>
+</body>
+</html>
