@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let result;
+    result ="<table border='1' width='700px' cellspacing='0' cellpadding='3'>";
+    for (let i = 1; i <= 10; i++) {
+        result += "<tr>";
+        for (let j = 2; j <= 9; j++) {
+            let result2 = i * j;
+            result += "<td>";
+            result += j + " x " + i + " = " + result2;
+            result += "</td>"
+        }
+        result += "</tr>";
+    }
+    result += "</table>";
+    document.write(result);
+</script>
+</body>
+</html>
