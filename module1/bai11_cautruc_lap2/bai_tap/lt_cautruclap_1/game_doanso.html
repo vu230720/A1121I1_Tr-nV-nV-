@@ -5,5 +5,30 @@
     <title>Title</title>
 </head>
 <body>
+<button type="button" onclick="batdau()">Chơi</button>
+<script>
+    function batdau() {
+        let from = parseInt(prompt("Bạn muốn bắt đầu từ khoảng: "));
+        let to = parseInt(prompt("Đến: "));
+        let random = Math.floor(Math.random() * (to - from + 1) + from);
+        let choose ;
+        let check = false ;
+        for (let i = 0; i < 3; i++){
+            choose = parseInt(prompt("Nhập số bạn muốn đoán:"));
+            if (choose === random){
+                alert("Bạn đã đoán đúng !!");
+                check = true;
+                break;
+            }else if (choose > random){
+                alert("Bạn đã nhập số lớn hơn, mời nhập lại");
+            }else {
+                alert("Bạn đã nhập số nhỏ hơn, mời nhập lại");
+            }
+        }
+        if (check){
+            alert("Bạn đã hết lượt chơi");
+        }
+    }
+</script>
 </body>
 </html>
