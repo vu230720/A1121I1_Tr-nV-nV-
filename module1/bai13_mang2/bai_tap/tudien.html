@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let imp = prompt("Enter the word to be translated");
+    let vie = ["tôi", "muốn", "đến", "lớp"];
+    let eng = ["i", "want", "to", "class"];
+    for (let i = 0; i < imp.length; i++){
+        if (imp === vie[i]){
+            alert(eng[i]);
+            break;
+        }else{
+            alert("Không tìm thấy");
+        }
+    }
+</script>
+</body>
+</html>

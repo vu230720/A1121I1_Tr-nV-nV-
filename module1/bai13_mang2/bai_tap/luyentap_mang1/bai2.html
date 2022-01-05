@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [14, 5, 95, 23, 7, 20];
+    let max = 0;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] > max){
+            max = arr[i];
+        }
+    }
+    document.write(max + " là số lớn nhất trong mảng" + "<br>" + "arr[" + arr.indexOf(max) + "] là vị trí có giá trị lớn nhất trong mảng")
+</script>
+</body>
+</html>
