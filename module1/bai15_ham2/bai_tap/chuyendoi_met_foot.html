@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label for="met">Meter</label>
+    <input id="met" type="number">
+    <button type="button" onclick="footToMeter()">Change</button>
+</form>
+<p id="result1"></p>
+<hr>
+<form>
+    <label for="foot">Foot</label>
+    <input id="foot" type="number">
+    <button type="button" onclick="meterToFoot()">Change</button>
+</form>
+<p id="result2"></p>
+<script>
+    function footToMeter(foot) {
+        met = document.getElementById("met").value;
+        document.getElementById("result1").innerHTML= "Foot = " + (met*3.279);
+    }
+    function meterToFoot(meter) {
+        foot = document.getElementById("foot").value;
+        document.getElementById("result2").innerHTML= "Meter = " + (foot*0.305);
+    }
+</script>
+</body>
+</html>
