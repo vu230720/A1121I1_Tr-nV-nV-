@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(arr ,x) {
+        let b = 0;
+        for (let i=0; i <= arr.length;i++){
+            if (arr[i] == x){
+                b++;
+            }else {
+                return -1;
+            }
+        }
+        return b;
+    }
+    let a = parseInt(prompt("Nhập độ dài của mảng: "));
+    let arr = [];
+    for (let i=0; i<= a; i++){
+        arr[i] = prompt("Nhập ký tự arr[" + i + "]=");
+        arr.push(arr[i]);
+    }
+    let x = prompt("Nhập ký tự cần kiểm tra: ");
+    alert(check(arr,x));
+</script>
+</body>
+</html>
