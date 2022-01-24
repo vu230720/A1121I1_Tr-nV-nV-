@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra = prompt("Nhập kí tự cần kiểm tra: ");
+    kiemtra = kiemtra.toLowerCase();
+    switch (kiemtra) {
+        case "o":
+        case "u":
+        case "i":
+        case "a":
+        case "e":
+            alert("Ký tự bạn vừa nhập là số nguyên âm");
+            break;
+        default:
+            alert("Ký tự bạn vừa nhập là phụ âm");
+    }
+</script>
+</body>
+</html>

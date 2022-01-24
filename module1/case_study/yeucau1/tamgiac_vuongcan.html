@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt("Nhập chiều cao: "));
+    let result = "";
+    for (let i= 1; i <= height; i++){
+        for (let j=1; j <= height; j++){
+            if (i=== height){
+                result += "*";
+            }else if (j ===1 || j===i){
+                result += "*";
+            }else {
+                result += "&ensp;";
+            }
+        }
+        result += "<br>";
+    }
+    document.write(result);
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tuSo = [];
+    let mauSo = [];
+    let size = parseInt(prompt("nhập độ dài của mảng phân số: "));
+
+    for (let i = 0; i < size; i++){
+        tuSo.push(parseInt(prompt("Nhập vào các tử số:")));
+        mauSo.push(parseInt(prompt("Nhập vào các mâu số:")));
+    }
+    function maxFraction(tuSo,mauSo) {
+        let maxIndex = 0;
+        for (let i = 1; i < tuSo.length; i++){
+            if (tuSo[maxIndex] * mauSo[i] < tuSo[i] * mauSo[maxIndex]){
+                maxIndex = i;
+            }
+        }
+        return maxIndex;
+    }
+    document.write("Chỉ số của phân số lớn nhất là: " + maxFraction(tuSo,mauSo));
+</script>
+</body>
+</html>

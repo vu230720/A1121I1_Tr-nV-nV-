@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt("Nhập  chiều cao: "));
+    let width = height * 2 - 1;
+    let result = "";
+    for (let i = 1; i <= height; i++) {
+        for (let j = 0; j < width / 2 - i; j++) {
+            result += "&ensp;"
+        }
+        for (let k = 0; k < i * 2 - 1; k++) {
+            if (i === height) {
+                result += "*";
+            } else if ( k === 0 || k === i*2-2 ){
+                result += "*";
+            }else  {
+                result += "&ensp;";
+            }
+        }
+        result += "<br>";
+    }
+    document.write(result);
+</script>
+</body>
+</html>

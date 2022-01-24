@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = parseInt(prompt("nhập vào độ dài mảng : "));
+    let arr = [];
+    let arr1 = [];
+    let result = 0;
+    for (let i = 0; i < nhap; i++) {
+        arr.push(parseInt(prompt("nhập vào số nguyên:")));
+    }
+    document.write("Mảng arr: " + arr + "<br>");
+    for (let i = 0; i < arr.length; i++) {
+        result += arr[i];
+        arr1[i] = result;
+    }
+    document.write("Prefix Sums của mảng arr là: " + arr1);
+</script>
+</body>
+</html>

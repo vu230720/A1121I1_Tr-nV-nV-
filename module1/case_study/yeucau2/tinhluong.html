@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienluong = parseInt(prompt("Nhập vào tiền lương tháng này: "));
+    let tienthue;
+    if (tienluong > 15000000){
+        tienthue = tienluong*0.2;
+        tienluongsauthue = tienluong - tienthue;
+        alert("Tiền lương thực nhận tháng này là: " + tienluongsauthue + "\n" + "Tiền thuế đã đóng: " + tienthue);
+    }else if (tienluong > 7000000){
+        tienthue = tienluong*0.1;
+        tienluongsauthue = tienluong - tienthue;
+        alert("Tiền lương thực nhận tháng này là: " + tienluongsauthue + "\n" + "Tiền thuế đã đóng: " + tienthue);
+    }else {
+        tienthue = tienluong*0.05;
+        tienluongsauthue = tienluong - tienthue;
+        alert("Tiền lương thực nhận tháng này là: " + tienluongsauthue + "\n" + "Tiền thuế đã đóng: " + tienthue);
+    }
+</script>
+</body>
+</html>
